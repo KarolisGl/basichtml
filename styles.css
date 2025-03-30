@@ -1,0 +1,33 @@
+.navbar {
+    display:flex;
+    overflow: hidden;
+    margin: auto;
+    justify-content: space-between;
+}
+.current {
+    font-weight: bold;
+}
+.left-side {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+.right-side {
+    margin-left: auto;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+.content {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr) min-content;
+    grid-template-rows: repeat(5, 1fr) min-content;
+    gap: 8px;
+}
+.card {
+    grid-column: span 5 / span 5;
+    grid-row: span 3 / span 3;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+}
